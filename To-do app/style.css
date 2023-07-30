@@ -1,0 +1,162 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbeaeb;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2f3c7e;
+}
+
+.add-task-section {
+  background-color: #fbeaeb;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Display form items in a column */
+}
+
+form input[type="text"],
+form input[type="datetime-local"],
+form button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+  flex: 1; 
+  background-color: #2f3c7e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+form button i {
+  margin-right: 5px;
+}
+
+form button:hover {
+  background-color: #1e2a59;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.lists .pending-tasks,
+.lists .completed-tasks {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.tasks-list {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+li.pending {
+  background-color: #fbeaeb; 
+  color: #2f3c7e;
+}
+
+li.completed {
+  background-color: #9ad2c6;
+  color: #006400;
+}
+
+li button {
+  padding: 8px 15px;
+  margin-right: 5px; /* Add margin between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+li span {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+li .task-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+li .completed-button {
+  background-color: #1a936f;
+  color: #fff;
+  margin-right: 5px;
+}
+
+li .edit-button {
+  background-color: #2f3c7e;
+  color: #fff;
+  margin-right: 5px;
+}
+
+li .delete-button {
+  background-color: #d62828;
+  color: #fff;
+}
+
+li button i {
+  margin-right: 5px;
+}
+
+li button:hover {
+  filter: brightness(1.2);
+}
